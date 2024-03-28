@@ -3,3 +3,7 @@ Unity 2022.3.21f1|StandardRP|GraphicAPI-DX12
 
 OepnXR + XR INteraction Toolkit
 
+
+Credits:
+Mackenzie Li, Grace Mai, Vera Wu @2024
+
