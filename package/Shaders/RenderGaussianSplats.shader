@@ -3,7 +3,7 @@ Shader "Gaussian Splatting/Render Splats"
 {
     SubShader
     {
-        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+        Tags { "RenderType"="Opaque" "Queue"="Background" }
 
         Pass
         {
