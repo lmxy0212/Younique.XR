@@ -8,13 +8,10 @@ public class AutoSnap : MonoBehaviour
     {
         
     }
-
-
     void Update()
     {
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
         GameObject parentObj = other.transform.parent.gameObject;
@@ -26,7 +23,6 @@ public class AutoSnap : MonoBehaviour
             parentObj.GetComponent<SnapObj>().isSnaped = true;
             other.transform.parent.SetParent(this.transform);
         }
-
     }
     private void OnTriggerExit(Collider other)
     {
