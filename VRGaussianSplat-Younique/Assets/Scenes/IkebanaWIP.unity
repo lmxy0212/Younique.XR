@@ -1706,6 +1706,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 645098804229233803, guid: d3acab71a4bd740b38c9c3eb73b23eb0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c956ff5b8de714d75b1845d12b2a2125, type: 2}
     - target: {fileID: 919132149155446097, guid: d3acab71a4bd740b38c9c3eb73b23eb0, type: 3}
       propertyPath: m_Name
       value: kenzan-big
@@ -1757,6 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00a945810e653c4c8041b4e89ca48c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSnapped: 0
 --- !u!1 &968162826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,8 +4587,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.05, y: 0.05, z: 0.08931645}
-  m_Center: {x: 0, y: -6.3846564e-17, z: 0.012305305}
+  m_Size: {x: 0.05, y: 0.05, z: 0.21764895}
+  m_Center: {x: 0, y: -3.5515832e-16, z: 0.056242056}
 --- !u!114 &1961351843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4596,6 +4601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00a945810e653c4c8041b4e89ca48c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSnapped: 0
 --- !u!1 &2012152657
 GameObject:
   m_ObjectHideFlags: 0
