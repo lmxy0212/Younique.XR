@@ -11,7 +11,7 @@ Shader "CustomShader"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" "RenderQueue"="3000" }
+        Tags { "RenderType"="Opaque" "RenderQueue"="Transparent" }
         LOD 200
 
         CGPROGRAM
