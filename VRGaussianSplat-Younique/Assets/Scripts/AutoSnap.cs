@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AutoSnap : MonoBehaviour
 {
-    public bool isSnapped;
     void Start()
     {
         
@@ -18,23 +17,28 @@ public class AutoSnap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Flower" && !isSnapped)
+        GameObject parentObj = other.transform.parent.gameObject;
+        if (other.gameObject.tag == "Flower" && !parentObj.GetComponent<SnapObj>().isSnaped)
         {
-            other.transform.parent.gameObject.transform.position = this.transform.position;
-            Debug.Log(this.name + ": snap!!!" + other.gameObject.name);
-            other.transform.parent.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            parentObj.transform.position = this.transform.position;
+            Debug.Log(this.name + ": Enter" + other.gameObject.name);
+            parentObj.GetComponent<Rigidbody>().isKinematic = true;
+            parentObj.GetComponent<SnapObj>().isSnaped = true;
             other.transform.parent.SetParent(this.transform);
-            isSnapped = true;
         }
+
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Flower" && isSnapped)
-        {
-            isSnapped = false;
-            other.transform.parent.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        GameObject parentObj = other.transform.parent.gameObject;
+        if (other.gameObject.tag == "Flower" && parentObj.GetComponent<SnapObj>().isSnaped)
+        {            
+            //parentObj.GetComponent<Rigidbody>().isKinematic = false;
+            //parentObj.GetComponent<Rigidbody>().WakeUp(); 
             other.transform.parent.SetParent(null);
-            Debug.Log("moveddddddd" + other.gameObject.name);
+            parentObj.GetComponent<SnapObj>().isSnaped = false;
+            Debug.Log(this.name + ": Exit!!!" + other.gameObject.name);
+
         }
     }
 
