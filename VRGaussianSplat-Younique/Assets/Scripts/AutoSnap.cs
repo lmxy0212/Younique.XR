@@ -33,12 +33,8 @@ public class AutoSnap : MonoBehaviour
         GameObject parentObj = other.transform.parent.gameObject;
         if (other.gameObject.tag == "Flower" && parentObj.GetComponent<SnapObj>().isSnaped)
         {            
-            //parentObj.GetComponent<Rigidbody>().isKinematic = false;
-            //parentObj.GetComponent<Rigidbody>().WakeUp(); 
-            other.transform.parent.SetParent(null);
             parentObj.GetComponent<SnapObj>().isSnaped = false;
             Debug.Log(this.name + ": Exit!!!" + other.gameObject.name);
-
         }
     }
 

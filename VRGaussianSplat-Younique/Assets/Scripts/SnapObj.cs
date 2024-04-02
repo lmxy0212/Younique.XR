@@ -12,6 +12,10 @@ public class SnapObj : MonoBehaviour
 
     void Update()
     {
-        
+        if (!isSnaped)
+        {
+            transform.SetParent(null);
+            GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 }
