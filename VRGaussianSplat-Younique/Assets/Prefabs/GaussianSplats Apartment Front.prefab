@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3433341452850851131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9126208364634379955}
+  - component: {fileID: 3058653491182276837}
+  m_Layer: 0
+  m_Name: GSCutout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &9126208364634379955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433341452850851131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.28377888, z: -4.6566123e-10, w: 0.9588897}
+  m_LocalPosition: {x: -5.83, y: -2.09, z: 12.1}
+  m_LocalScale: {x: -4.6, y: 12.887218, z: -19.558876}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6277090277585683033}
+  m_LocalEulerAnglesHint: {x: 0, y: -32.972, z: 0}
+--- !u!114 &3058653491182276837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433341452850851131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c57a1c501bd05549ae157cc474bd4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Type: 1
+  m_Invert: 0
+--- !u!1 &6244831117856603461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6277090277585683033}
+  - component: {fileID: 2082744678732098636}
+  m_Layer: 0
+  m_Name: GaussianSplats Apartment Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6277090277585683033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244831117856603461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.26723325, y: -0.001632437, z: 0.96361256, w: -0.0058863815}
+  m_LocalPosition: {x: 0.36, y: 1, z: 0.92}
+  m_LocalScale: {x: 0.17766504, y: 0.17766504, z: -0.17766504}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 9126208364634379955}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -180, y: 211, z: 0.69999695}
+--- !u!114 &2082744678732098636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244831117856603461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6140b00d7dc0424488eeed01af24874c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Asset: {fileID: 11400000, guid: 841a219a1a46e418cbcb77442d008720, type: 2}
+  m_SplatScale: 0.8
+  m_OpacityScale: 1
+  m_SHOrder: 3
+  m_SHOnly: 0
+  m_SortNthFrame: 1
+  m_RenderMode: 0
+  m_PointDisplaySize: 3
+  m_Cutouts:
+  - {fileID: 0}
+  - {fileID: 3058653491182276837}
+  m_ShaderSplats: {fileID: 4800000, guid: 61174e29ab434004bae589e5bee23370, type: 3}
+  m_ShaderComposite: {fileID: 4800000, guid: b97dad6184940504db5ce04aaf634ee8, type: 3}
+  m_ShaderDebugPoints: {fileID: 4800000, guid: bf6c2c66af7895b49b62512bcac171c0, type: 3}
+  m_ShaderDebugBoxes: {fileID: 4800000, guid: d3d9874e639e8b743b36d586fb748c6c, type: 3}
+  m_CSSplatUtilities: {fileID: 7200000, guid: 0f1729af11d1d224bb84695908d415de, type: 3}

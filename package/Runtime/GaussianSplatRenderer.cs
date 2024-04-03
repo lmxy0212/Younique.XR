@@ -55,7 +55,7 @@ namespace GaussianSplatting.Runtime
                         foreach (var cam in m_CameraCommandBuffersDone)
                         {
                             if (cam)
-                                cam.RemoveCommandBuffer(CameraEvent.BeforeForwardOpaque, m_CommandBuffer);
+                                cam.RemoveCommandBuffer(CameraEvent.BeforeForwardAlpha, m_CommandBuffer);
                         }
                     }
                     m_CameraCommandBuffersDone.Clear();
@@ -169,7 +169,7 @@ namespace GaussianSplatting.Runtime
             m_CommandBuffer ??= new CommandBuffer {name = "RenderGaussianSplats"};
             if (GraphicsSettings.currentRenderPipeline == null && cam != null && !m_CameraCommandBuffersDone.Contains(cam))
             {
-                cam.AddCommandBuffer(CameraEvent.BeforeForwardOpaque, m_CommandBuffer);
+                cam.AddCommandBuffer(CameraEvent.BeforeForwardAlpha, m_CommandBuffer);
                 m_CameraCommandBuffersDone.Add(cam);
             }
 
