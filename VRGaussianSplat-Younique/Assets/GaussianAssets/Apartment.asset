@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906bed3b6e8f0f246b0dc1ec88f5484c, type: 3}
+  m_Name: Apartment
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 1143981
+  m_BoundsMin: {x: -149.79628, y: -149.79881, z: -149.79762}
+  m_BoundsMax: {x: 149.79782, y: 149.7962, z: 149.79762}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: 01d366ebd182616b92faf624ee606cf9
+  m_PosFormat: 1
+  m_ScaleFormat: 1
+  m_SHFormat: 2
+  m_ColorFormat: 1
+  m_PosData: {fileID: 4900000, guid: 3b171cc86966d4c9bbb183452cc30e5f, type: 3}
+  m_ColorData: {fileID: 4900000, guid: 6331956828f64468393b1b92bf692d0d, type: 3}
+  m_OtherData: {fileID: 4900000, guid: 69e9f7ae799cf4c35b8b68d84cc1f77f, type: 3}
+  m_SHData: {fileID: 4900000, guid: 690286a4121c14cd980bab02846a0a76, type: 3}
+  m_ChunkData: {fileID: 4900000, guid: 568b72c5c6e504016a26891f30fbaac8, type: 3}
+  m_Cameras: []

@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class PlayAudio : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume = 1.0f;
+
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+
     }
 
 
@@ -17,11 +23,11 @@ public class PlayAudio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //collide trigger
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        //collide
+        audioSource.PlayOneShot(audioSource.clip, volume);
     }
 }
