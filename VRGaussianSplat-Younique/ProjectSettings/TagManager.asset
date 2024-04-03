@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Flower
   - Table
+  - SnappableFlower
   layers:
   - Default
   - TransparentFX

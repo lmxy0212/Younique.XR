@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SnapObj : MonoBehaviour
 {
+    public bool isCut;
     public bool isSnaped;
     void Start()
     {
@@ -12,10 +13,14 @@ public class SnapObj : MonoBehaviour
 
     void Update()
     {
-        if (!isSnaped)
+        if (isCut && !isSnaped)
         {
             transform.SetParent(null);
-            GetComponent<Rigidbody>().isKinematic = false;
+            if (GetComponent<Rigidbody>() != null)
+            {
+                GetComponent<Rigidbody>().isKinematic = false;
+            }
+            
         }
     }
 }

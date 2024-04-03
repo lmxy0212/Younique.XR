@@ -10,7 +10,7 @@ public class Cutcutcut : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Flower")
+        if (other.gameObject.tag == "Flower" || other.gameObject.tag == "SnappableFlower")
         {
             removed_obj = other.gameObject;
             if (removed_obj.transform.parent != null)
@@ -37,6 +37,10 @@ public class Cutcutcut : MonoBehaviour
             {
                 removed_obj.AddComponent<XRGrabInteractable>();
                 removed_obj.AddComponent<XRInstantiateGrabbableObject>();
+            }
+            if (other.gameObject.tag == "SnappableFlower")
+            {
+                other.GetComponent<SnapObj>().isCut = true;
             }
         }
     }
