@@ -6,6 +6,7 @@ public class SnapObj : MonoBehaviour
 {
     public bool isCut;
     public bool isSnaped;
+    public GameObject snapPos;
     void Start()
     {
         
@@ -21,6 +22,10 @@ public class SnapObj : MonoBehaviour
                 GetComponent<Rigidbody>().isKinematic = false;
             }
             
+        }
+        if (isSnaped)
+        {
+            transform.SetParent(snapPos.transform);
         }
     }
 }
