@@ -25,8 +25,16 @@ public class Cutcutcut : MonoBehaviour
                 {
                     Destroy(parent.GetComponent<XRInstantiateGrabbableObject>());
                 }
+                if (parent.transform.childCount == 0)
+                {
+                    Destroy(parent);
+                }
+                else
+                {
+                    parent.AddComponent<XRInstantiateGrabbableObject>();
+                    removed_obj.AddComponent<SetDynamicAttachPos>().UseDynamicAttach = true;
+                }
                 
-                parent.AddComponent<XRGrabInteractable>();
                 removed_obj.AddComponent<XRInstantiateGrabbableObject>();
                 //XRGrabInteractable parentInter = parent.GetComponent<XRGrabInteractable>();
                 //parentInter.interactionManager.UnregisterInteractable(parent.GetComponent<IXRInteractable>());
@@ -35,8 +43,10 @@ public class Cutcutcut : MonoBehaviour
             }
             if (removed_obj.GetComponent<Rigidbody>() == null)
             {
-                removed_obj.AddComponent<XRGrabInteractable>();
+                removed_obj.AddComponent<SetDynamicAttachPos>().UseDynamicAttach = true;
+                //removed_obj.AddComponent<XRGrabInteractable>();
                 removed_obj.AddComponent<XRInstantiateGrabbableObject>();
+                removed_obj.AddComponent<SetDynamicAttachPos>().UseDynamicAttach = true;
             }
             if (other.gameObject.tag == "SnappableFlower")
             {
