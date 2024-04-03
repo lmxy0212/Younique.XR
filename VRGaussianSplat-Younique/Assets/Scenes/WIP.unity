@@ -6748,6 +6748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GaussianSplats Apartment Front
       objectReference: {fileID: 0}
+    - target: {fileID: 6244831117856603461, guid: d40f8a25225a44ab9a2e62a5fd056b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6277090277585683033, guid: d40f8a25225a44ab9a2e62a5fd056b5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.36
