@@ -14,8 +14,8 @@ public class Cutcutcut : MonoBehaviour
             removed_obj.transform.SetParent(null);
             if (removed_obj.GetComponent<Rigidbody>() == null)
             {
-                removed_obj.AddComponent<Rigidbody>();
                 removed_obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+                removed_obj.AddComponent<XRInstantiateGrabbableObject>();
             }
         }
     }
