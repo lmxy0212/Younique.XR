@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906bed3b6e8f0f246b0dc1ec88f5484c, type: 3}
+  m_Name: kaz_living_room
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 316202
+  m_BoundsMin: {x: -18.800877, y: -4.9079943, z: -13.501764}
+  m_BoundsMax: {x: 18.237741, y: 24.972542, z: 27.62082}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: ca4df4a7328d1b86bc3415d764842eee
+  m_PosFormat: 0
+  m_ScaleFormat: 0
+  m_SHFormat: 0
+  m_ColorFormat: 0
+  m_PosData: {fileID: 4900000, guid: adbf6e077515d3d4596ebfb2f5e377c9, type: 3}
+  m_ColorData: {fileID: 4900000, guid: 11672eca2e7f3d74782a1edb85ed36f4, type: 3}
+  m_OtherData: {fileID: 4900000, guid: ab7df48cd18e2f742beaae24ba2904be, type: 3}
+  m_SHData: {fileID: 4900000, guid: da7d3da8ac423e9409ccd2d9a9925b23, type: 3}
+  m_ChunkData: {fileID: 0}
+  m_Cameras: []
