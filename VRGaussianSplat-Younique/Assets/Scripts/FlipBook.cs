@@ -48,6 +48,10 @@ public class FlipBook : MonoBehaviour
         {
             isAnimating = true;
             Debug.Log("BOOK!");
+        }else if (other.transform.gameObject.tag == "Flower")
+        {
+            isAnimating = true;
+            Debug.Log("BOOK!");
         }
 
     }

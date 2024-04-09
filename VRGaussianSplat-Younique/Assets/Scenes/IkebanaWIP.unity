@@ -1688,7 +1688,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -0.3479, y: 0.04299997, z: 1.6095}
-  - {x: -0.39780003, y: 0.04299997, z: 1.5647001}
+  - {x: -0.41300002, y: 0.04299997, z: 1.5450001}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.003
@@ -8552,6 +8552,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56cd8ef0143d1417ab45ecc66750b093, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1244743390}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56cd8ef0143d1417ab45ecc66750b093, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1244743392}
     - targetCorrespondingSourceObject: {fileID: 905322225272445312, guid: 56cd8ef0143d1417ab45ecc66750b093, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1244743381}
@@ -8930,6 +8933,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1244743392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244743372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40fdfcdb963a8a4f9ef0fd36e8460c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrabbed: 0
+  showInfo: 1
+  showInfoDuration: 5
+  tooltip: {fileID: 1239118818}
 --- !u!1001 &1257975392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10051,7 +10070,7 @@ Transform:
   m_GameObject: {fileID: 1444515244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.0758, y: 0.0743, z: -0}
+  m_LocalPosition: {x: -0.091, y: 0.094, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
