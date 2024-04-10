@@ -8,6 +8,8 @@ TagManager:
   - Table
   - SnappableFlower
   - Manual
+  - Manual-backward
+  - Manual-forward
   layers:
   - Default
   - TransparentFX
