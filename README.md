@@ -8,6 +8,9 @@
 
 
 
+
+
+
 ## About The Project
 
 We need a project intro hahaha
@@ -38,7 +41,7 @@ We need a project intro hahaha
 
 
 
-### Tech Stack
+## Tech Stack
 
 Unity 2022.3.21f1 | StandardRP | GraphicAPI-DX12
 
