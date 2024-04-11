@@ -3,6 +3,8 @@
     <img src="Younique.png" alt="Logo" width="80" height="80">
   </a>
 <h3 align="center">Younique</h3>
+</div>
+
 
 
 
