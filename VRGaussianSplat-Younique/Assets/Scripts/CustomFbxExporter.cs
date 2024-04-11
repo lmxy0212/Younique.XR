@@ -21,29 +21,36 @@ namespace UnLogickFactory
 
         void ExportFbx()
         {
-            string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx"; // Construct the export path.
+            // Make a copy of the GameObject
+            GameObject copy = Instantiate(objectToExport);
 
-            Transform[] transforms = { objectToExport.transform }; // Prepare the transform array.
+            // Reset the copy's transform
+            copy.transform.position = Vector3.zero;
+            copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            copy.transform.localScale = Vector3.one;
+
+            // Update the path for exporting the copy
+            string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx";
+
+            Transform[] transforms = { copy.transform }; // Use the copy's transform for exporting
 
             Debug.Log("Custom Fbx Exporter - Starting export");
 
 #if UNITY_EDITOR
             var filename = exportPath;
 #else
-            var filename = customExportName + ".fbx"; // Use only the file name in runtime if needed.
+            var filename = customExportName + ".fbx";
 #endif
 
             if (!string.IsNullOrEmpty(filename))
             {
                 var settings = new FbxExportSettings();
                 settings.textureScheme = FbxTextureExportScheme.GetDefaultScheme();
-                // Define callbacks as needed or reuse existing ones.
                 settings.OnFbxNodeCreated = OnFbxNodeCallback;
                 settings.OnFbxMeshCreated = OnFbxMeshCallback;
                 settings.OnFbxTerrainCreated = OnFbxTerrainCallback;
                 settings.OnFbxSkinnedMeshCreated = OnFbxSkinnedMeshCallback;
                 settings.OnFbxMaterialCreated = OnFbxMaterialCallback;
-                // Assuming logLevel is a part of FbxExportSettings and is relevant.
                 settings.logLevel = 0;
 
                 FbxExporter.Export(filename, settings, transforms);
@@ -58,13 +65,15 @@ namespace UnLogickFactory
             {
                 Debug.LogError("Custom Fbx Exporter - No filename specified");
             }
+
+            // Destroy the copy after exporting
+            Destroy(copy);
         }
 
-        // Callbacks are reused from the provided example. You might want to adjust or extend these based on your export needs.
-        void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { /* Your custom logic here */ }
-        void OnFbxMeshCallback(Transform transform, IntPtr fbxNode, MeshRenderer meshRenderer, IntPtr fbxMesh) { /* Your custom logic here */ }
-        void OnFbxTerrainCallback(Transform transform, IntPtr fbxNode, Terrain terrain, IntPtr fbxMesh) { /* Your custom logic here */ }
-        void OnFbxSkinnedMeshCallback(Transform transform, IntPtr fbxNode, SkinnedMeshRenderer skinnedMeshRenderer, IntPtr fbxMesh) { /* Your custom logic here */ }
-        void OnFbxMaterialCallback(Transform transform, IntPtr fbxNode, IntPtr fbxMaterial, IntPtr[] fbxTextures) { /* Your custom logic here */ }
+        void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { }
+        void OnFbxMeshCallback(Transform transform, IntPtr fbxNode, MeshRenderer meshRenderer, IntPtr fbxMesh) { }
+        void OnFbxTerrainCallback(Transform transform, IntPtr fbxNode, Terrain terrain, IntPtr fbxMesh) { }
+        void OnFbxSkinnedMeshCallback(Transform transform, IntPtr fbxNode, SkinnedMeshRenderer skinnedMeshRenderer, IntPtr fbxMesh) { }
+        void OnFbxMaterialCallback(Transform transform, IntPtr fbxNode, IntPtr fbxMaterial, IntPtr[] fbxTextures) { }
     }
 }
