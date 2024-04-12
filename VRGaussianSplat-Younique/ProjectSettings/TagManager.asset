@@ -10,6 +10,7 @@ TagManager:
   - Manual
   - Manual-backward
   - Manual-forward
+  - Plate
   layers:
   - Default
   - TransparentFX
