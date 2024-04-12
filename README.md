@@ -2,7 +2,7 @@
   <a href="https://github.com/lmxy0212/VRGaussianSplat.git">
     <img src="Younique.png" alt="Logo" width="80" height="80">
   </a>
-<h3 align="center">Younique</h3>
+<h3 align="center">Younique: The Immersive Ikebana Experience</h3>
 </div>
 
 
@@ -17,6 +17,18 @@ We need a project intro hahaha
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTORS -->
+
+## Contributors 
+
+**Mackenzie Li**, XR Generalist
+
+**Grace Mai**, Technical Artist
+
+**Vera Wu**, UX Prototyper
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -25,7 +37,7 @@ We need a project intro hahaha
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#build-with ">Build With</a></li>
-    <li><a href="#Contributors ">Contributors</a></li>
+    <li><a href="#key-features ">Key Features</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -67,6 +79,10 @@ Assets and external resources used in this projects:
 
 Updated on Apr12/2024
 
+**Gaussian Splat Assets:**
+
+* 
+
 **Plates:**
 
 - Plates featuring kanzan can be picked up.
@@ -90,18 +106,6 @@ Updated on Apr12/2024
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTORS -->
-
-## Contributors 
-
-**Mackenzie Li**, XR Generalist
-
-**Grace Mai**, Technical Artist
-
-**Vera Wu**, UX Prototyper
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
