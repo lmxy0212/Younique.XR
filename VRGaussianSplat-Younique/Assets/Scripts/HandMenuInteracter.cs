@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnLogickFactory;
 
 public class HandMenuInteracter : MonoBehaviour
 {
     public MenuController menuControllerScript;
+    public CustomFbxExporter fbxExporter;
     void Start()
     {
         
@@ -20,6 +22,10 @@ public class HandMenuInteracter : MonoBehaviour
         if (other.transform.gameObject.tag == "Menu") 
         {
             menuControllerScript.toggleMenuBtns = true;
+        }
+        if (other.transform.gameObject.tag == "Camera-Btn")
+        {
+            fbxExporter.enableExport = true;
         }
     }
 }

@@ -1402,9 +1402,11 @@ GameObject:
   - component: {fileID: 176593879}
   - component: {fileID: 176593881}
   - component: {fileID: 176593880}
+  - component: {fileID: 176593883}
+  - component: {fileID: 176593882}
   m_Layer: 0
-  m_Name: buttom
-  m_TagString: Untagged
+  m_Name: cam-btn
+  m_TagString: Camera-Btn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1474,6 +1476,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176593878}
   m_Mesh: {fileID: 289301614986012343, guid: c4ee4ca6efe944101a6184923ab52f4f, type: 3}
+--- !u!65 &176593882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176593878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.178885, y: 0.17012799, z: 0.19999997}
+  m_Center: {x: 0, y: 0, z: 0.00000011920929}
+--- !u!54 &176593883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176593878}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &180228783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,6 +2196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuControllerScript: {fileID: 645356915}
+  fbxExporter: {fileID: 0}
 --- !u!4 &298217529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4ee4ca6efe944101a6184923ab52f4f, type: 3}
@@ -5554,6 +5605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuControllerScript: {fileID: 645356915}
+  fbxExporter: {fileID: 0}
 --- !u!1 &654385834
 GameObject:
   m_ObjectHideFlags: 0
@@ -6307,7 +6359,7 @@ Transform:
   m_GameObject: {fileID: 738613716}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -0.0581, y: 0.05, z: -0.0027}
+  m_LocalPosition: {x: -0.057, y: 0.05, z: -0.005}
   m_LocalScale: {x: 0.2, y: 0.24037614, z: 0.0052885152}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15703,7 +15755,7 @@ Transform:
   m_GameObject: {fileID: 1656842010}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -0.0581, y: 0.05, z: -0.0027}
+  m_LocalPosition: {x: -0.058, y: 0.09, z: -0.009}
   m_LocalScale: {x: 0.2, y: 0.24037614, z: 0.0052885152}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -16870,13 +16922,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805984841}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec4a45f63359d53498b8203a56199d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSnaped: 0
   snapPos: {fileID: 0}
+  saveController: {fileID: 1734446993}
 --- !u!114 &1805984860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19542,6 +19595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4768145360841488113}
   - component: {fileID: 4757371111104233988}
+  - component: {fileID: 5287237361322847308}
   - component: {fileID: 1143732801784387362}
   m_Layer: 0
   m_Name: PlateSnap
@@ -19550,6 +19604,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5287237361322847308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287237361322847307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bc8fdfaaf460546aa5289acbf69f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketInteractor: {fileID: 4757371111104233988}
+  currentSnappedObject: {fileID: 0}
+  saveController: {fileID: 1734446993}
 --- !u!1 &6327146810574444880
 GameObject:
   m_ObjectHideFlags: 0
