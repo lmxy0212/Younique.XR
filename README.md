@@ -24,7 +24,7 @@ We need a project intro hahaha
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#tech-stack ">Tech Stack</a></li>
+    <li><a href="#build-with ">Build With</a></li>
     <li><a href="#Contributors ">Contributors</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -41,13 +41,51 @@ We need a project intro hahaha
 
 
 
-## Tech Stack
+## Build with
 
-Unity 2022.3.21f1 | StandardRP | GraphicAPI-DX12
+### **Unity 2022.3.21f1** | **StandardRP** | **GraphicAPI-DX12**
 
 OpenXR + XR Interaction Toolkit
 
-Tested on Quest2 and Quest Pro
+
+
+Assets and external resources used in this projects:
+
+- [GaussianSplattingVRViewerUnity](https://github.com/clarte53/GaussianSplattingVRViewerUnity) by CLARTE-LAB
+
+- Alembic
+
+- Fbx Exporter for Unity
+
+- Autodesk FBX SDK for Unity
+
+- Tested on Quest2 and Quest Pro
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Key Features
+
+Updated on Apr12/2024
+
+**Plates:**
+
+- Plates featuring kanzan can be picked up.
+- Once pick up a plate for the first time, player will see a description of kanzan.
+
+**Knife:**
+
+- Player can pick up the knife.
+- Use the knife to trim the branches and leaves of flowers.
+
+**Flowers and Leaves:**
+
+- These can also be picked up.
+- Player can use the knife to cut them.
+- The main branch can be snapped to the kanzan.
+
+**Book/Manual:**
+
+- Player can flip through the book in both directions, depending on which side is touched.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

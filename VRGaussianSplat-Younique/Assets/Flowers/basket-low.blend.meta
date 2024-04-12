@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 20226a5ed84e648aabe3513c506f9f88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: basket
     second: {fileID: 2100000, guid: 56d4aa48ed2314b97878649c036b1c0b, type: 2}
   materials:
