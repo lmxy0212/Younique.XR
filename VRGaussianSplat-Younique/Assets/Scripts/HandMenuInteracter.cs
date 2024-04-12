@@ -25,6 +25,7 @@ public class HandMenuInteracter : MonoBehaviour
         }
         if (other.transform.gameObject.tag == "Camera-Btn")
         {
+            Debug.Log("CAMERA BTN");
             fbxExporter.enableExport = true;
         }
     }
