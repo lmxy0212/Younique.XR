@@ -11,6 +11,8 @@ TagManager:
   - Manual-backward
   - Manual-forward
   - Plate
+  - Menu
+  - Camera-Btn
   layers:
   - Default
   - TransparentFX

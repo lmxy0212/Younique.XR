@@ -1,38 +1,37 @@
 using UnityEngine;
 using System;
+using System.Collections;
+using TMPro;
 
-// Ensure you have the necessary namespace that includes the FbxExporter and related classes.
 namespace UnLogickFactory
 {
     public class CustomFbxExporter : MonoBehaviour
     {
-        public bool enableExport = false; // Controls whether to export the FBX file.
-        public GameObject objectToExport; // GameObject to export.
-        public string customExportName = "CustomExportedModel"; // Custom name for the exported FBX file.
+        public GameObject saveText;
+        public bool enableExport = false;
+        public GameObject objectToExport;
+        public string customExportName = "CustomExportedModel";
 
         void Update()
         {
             if (enableExport && objectToExport != null)
             {
-                ExportFbx();
+                StartCoroutine(ExportFbx());
                 enableExport = false;
             }
         }
 
-        void ExportFbx()
+        IEnumerator ExportFbx()
         {
-            // Make a copy of the GameObject
             GameObject copy = Instantiate(objectToExport);
 
-            // Reset the copy's transform
             copy.transform.position = Vector3.zero;
             copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
             copy.transform.localScale = Vector3.one;
 
-            // Update the path for exporting the copy
             string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx";
 
-            Transform[] transforms = { copy.transform }; // Use the copy's transform for exporting
+            Transform[] transforms = { copy.transform };
 
             Debug.Log("Custom Fbx Exporter - Starting export");
 
@@ -41,7 +40,6 @@ namespace UnLogickFactory
 #else
             var filename = customExportName + ".fbx";
 #endif
-
             if (!string.IsNullOrEmpty(filename))
             {
                 var settings = new FbxExportSettings();
@@ -53,6 +51,8 @@ namespace UnLogickFactory
                 settings.OnFbxMaterialCreated = OnFbxMaterialCallback;
                 settings.logLevel = 0;
 
+                // Perform export asynchronously if possible
+                yield return null; // This line simulates the asynchronous behavior
                 FbxExporter.Export(filename, settings, transforms);
 
 #if UNITY_EDITOR
@@ -60,13 +60,17 @@ namespace UnLogickFactory
                 UnityEditor.EditorGUIUtility.PingObject(UnityEditor.AssetDatabase.LoadMainAssetAtPath(filename));
 #endif
                 Debug.Log("Custom Fbx Exporter - Export Done");
+                saveText.SetActive(true);
+
+                // Wait for 5 seconds before hiding the saveText
+                yield return new WaitForSeconds(5);
+                saveText.SetActive(false);
             }
             else
             {
                 Debug.LogError("Custom Fbx Exporter - No filename specified");
             }
 
-            // Destroy the copy after exporting
             Destroy(copy);
         }
 
