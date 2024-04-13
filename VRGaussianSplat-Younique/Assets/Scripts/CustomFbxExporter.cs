@@ -1,15 +1,13 @@
 using UnityEngine;
 using System;
 
-// Ensure you have the necessary namespace that includes the FbxExporter and related classes.
 namespace UnLogickFactory
 {
     public class CustomFbxExporter : MonoBehaviour
     {
-        public bool enableExport = false; // Controls whether to export the FBX file.
-        public GameObject objectToExport; // GameObject to export.
-        public string customExportName = "CustomExportedModel"; // Custom name for the exported FBX file.
-
+        public bool enableExport = false;
+        public GameObject objectToExport;
+        public string customExportName = "CustomExportedModel";
         void Update()
         {
             if (enableExport && objectToExport != null)
@@ -18,21 +16,17 @@ namespace UnLogickFactory
                 enableExport = false;
             }
         }
-
         void ExportFbx()
         {
-            // Make a copy of the GameObject
             GameObject copy = Instantiate(objectToExport);
 
-            // Reset the copy's transform
             copy.transform.position = Vector3.zero;
             copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
             copy.transform.localScale = Vector3.one;
 
-            // Update the path for exporting the copy
             string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx";
 
-            Transform[] transforms = { copy.transform }; // Use the copy's transform for exporting
+            Transform[] transforms = { copy.transform };
 
             Debug.Log("Custom Fbx Exporter - Starting export");
 
@@ -41,7 +35,6 @@ namespace UnLogickFactory
 #else
             var filename = customExportName + ".fbx";
 #endif
-
             if (!string.IsNullOrEmpty(filename))
             {
                 var settings = new FbxExportSettings();
@@ -66,10 +59,8 @@ namespace UnLogickFactory
                 Debug.LogError("Custom Fbx Exporter - No filename specified");
             }
 
-            // Destroy the copy after exporting
             Destroy(copy);
         }
-
         void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { }
         void OnFbxMeshCallback(Transform transform, IntPtr fbxNode, MeshRenderer meshRenderer, IntPtr fbxMesh) { }
         void OnFbxTerrainCallback(Transform transform, IntPtr fbxNode, Terrain terrain, IntPtr fbxMesh) { }
