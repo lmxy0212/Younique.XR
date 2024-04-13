@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 
 namespace UnLogickFactory
 {
@@ -8,15 +9,17 @@ namespace UnLogickFactory
         public bool enableExport = false;
         public GameObject objectToExport;
         public string customExportName = "CustomExportedModel";
+
         void Update()
         {
             if (enableExport && objectToExport != null)
             {
-                ExportFbx();
+                StartCoroutine(ExportFbx());
                 enableExport = false;
             }
         }
-        void ExportFbx()
+
+        IEnumerator ExportFbx()
         {
             GameObject copy = Instantiate(objectToExport);
 
@@ -46,6 +49,8 @@ namespace UnLogickFactory
                 settings.OnFbxMaterialCreated = OnFbxMaterialCallback;
                 settings.logLevel = 0;
 
+                // Perform export asynchronously if possible
+                yield return null; // This line simulates the asynchronous behavior
                 FbxExporter.Export(filename, settings, transforms);
 
 #if UNITY_EDITOR
@@ -61,6 +66,7 @@ namespace UnLogickFactory
 
             Destroy(copy);
         }
+
         void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { }
         void OnFbxMeshCallback(Transform transform, IntPtr fbxNode, MeshRenderer meshRenderer, IntPtr fbxMesh) { }
         void OnFbxTerrainCallback(Transform transform, IntPtr fbxNode, Terrain terrain, IntPtr fbxMesh) { }

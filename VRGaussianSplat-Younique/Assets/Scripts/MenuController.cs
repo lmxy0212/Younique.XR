@@ -22,6 +22,7 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         SetButtonsActive(false);
+        SetBoxColliderState(camBtn, false); // Initialize collider state to false
     }
 
     void Update()
@@ -51,14 +52,14 @@ public class MenuController : MonoBehaviour
     {
         lerpTime += Time.deltaTime / moveDuration;
 
-        camBtn.transform.position = isExpanded ? 
-            Vector3.Lerp(initialPos.position, camFinalPos.position, lerpTime) : 
+        camBtn.transform.position = isExpanded ?
+            Vector3.Lerp(initialPos.position, camFinalPos.position, lerpTime) :
             Vector3.Lerp(camFinalPos.position, initialPos.position, lerpTime);
-        settingBtn.transform.position = isExpanded ? 
-            Vector3.Lerp(initialPos.position, settingFinalPos.position, lerpTime) : 
+        settingBtn.transform.position = isExpanded ?
+            Vector3.Lerp(initialPos.position, settingFinalPos.position, lerpTime) :
             Vector3.Lerp(settingFinalPos.position, initialPos.position, lerpTime);
-        homeBtn.transform.position = isExpanded ? 
-            Vector3.Lerp(initialPos.position, homeFinalPos.position, lerpTime) : 
+        homeBtn.transform.position = isExpanded ?
+            Vector3.Lerp(initialPos.position, homeFinalPos.position, lerpTime) :
             Vector3.Lerp(homeFinalPos.position, initialPos.position, lerpTime);
 
         if (!halfwayPointReached && lerpTime >= 0.5f)
@@ -71,6 +72,7 @@ public class MenuController : MonoBehaviour
         {
             isAnimating = false;
             SetButtonsActive(isExpanded);
+            SetBoxColliderState(camBtn, isExpanded);  // Enable/Disable BoxCollider based on expansion state
         }
     }
 
@@ -79,5 +81,14 @@ public class MenuController : MonoBehaviour
         camBtn.SetActive(isActive);
         settingBtn.SetActive(isActive);
         homeBtn.SetActive(isActive);
+    }
+
+    void SetBoxColliderState(GameObject button, bool state)
+    {
+        BoxCollider collider = button.GetComponent<BoxCollider>();
+        if (collider != null)
+        {
+            collider.enabled = state;
+        }
     }
 }
