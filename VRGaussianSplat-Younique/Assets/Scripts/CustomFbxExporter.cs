@@ -1,11 +1,13 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using TMPro;
 
 namespace UnLogickFactory
 {
     public class CustomFbxExporter : MonoBehaviour
     {
+        public GameObject saveText;
         public bool enableExport = false;
         public GameObject objectToExport;
         public string customExportName = "CustomExportedModel";
@@ -58,6 +60,11 @@ namespace UnLogickFactory
                 UnityEditor.EditorGUIUtility.PingObject(UnityEditor.AssetDatabase.LoadMainAssetAtPath(filename));
 #endif
                 Debug.Log("Custom Fbx Exporter - Export Done");
+                saveText.SetActive(true);
+
+                // Wait for 5 seconds before hiding the saveText
+                yield return new WaitForSeconds(5);
+                saveText.SetActive(false);
             }
             else
             {
