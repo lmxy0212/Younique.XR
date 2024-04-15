@@ -89,11 +89,11 @@ Updated on Apr14/2024
 
 ### Folder Structure
 
-* Current active Scene: Assets/A-Scenes/IkebanaWIP
+* Current active Scene: Assets/Scenes/IkebanaWIP
 
-* All Scripts can be fond in Assets/A-Scripts
+* All Scripts can be fond in Assets/Scripts
 
-* All prefabs in the scene are located in Assets/A-Prefab/Flowers
+* All prefabs in the scene are located in Assets/Flowers
 
 * Gaussian Splat assets can be created from Tools/Gaussian Splat/Create GaussianSplatAsset
 
