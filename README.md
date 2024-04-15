@@ -15,7 +15,7 @@
 
 We're currently developing our MVP, an immersive virtual experience centered around the art of ikebana. We believe that this XR project offers complex interactions that traditional media can't easily replicate. To bring this vision to life, we've digitized a physical space using 3D scanning technology, turning it into a virtual environment where users can interact with 3D scanned flowers. Participants use a VR headset to arrange these flowers, crafting their own ikebana creations. Afterwards, they can explore and interact with their floral designs in augmented reality, making the experience even more engaging.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- CONTRIBUTORS -->
 
@@ -27,14 +27,12 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 **Vera Wu**, UX Prototyper, Harvard 25'
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<br>
 
 <!-- TABLE OF CONTENTS -->
-
-<details>
-  <summary>Table of Contents</summary>
+<p><details>
+  <summary><h3>Table of Contents</h3></summary>
   <ol>
     <li><a href="#build-with ">Build With</a></li>
     <li><a href="#Documentations ">Documentations</a>
@@ -55,10 +53,8 @@ We're currently developing our MVP, an immersive virtual experience centered aro
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
-
-
-
+</details></p>
+<br>
 ## Build with
 
 ### **Unity 2022.3.21f1** | **StandardRP** | **GraphicAPI-DX12**
@@ -200,20 +196,6 @@ Updated on Apr14/2024
 
 <!-- CONTRIBUTING -->
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated** **:)**
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
