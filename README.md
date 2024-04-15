@@ -28,7 +28,6 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 **Vera Wu**, UX Prototyper, Harvard 25'
 
 
-<br>
 
 <!-- TABLE OF CONTENTS -->
 <p><details>
@@ -55,6 +54,7 @@ We're currently developing our MVP, an immersive virtual experience centered aro
   </ol>
 </details></p>
 <br>
+
 ## Build with
 
 ### **Unity 2022.3.21f1** | **StandardRP** | **GraphicAPI-DX12**
