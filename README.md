@@ -7,9 +7,9 @@
 
 
 
-
-
-
+<div align="center">
+  <img src="VR-IKEBANA.JPG" width="400" height="600">
+</div>
 
 ## About The Project
 
