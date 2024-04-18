@@ -1,22 +1,27 @@
 using UnityEngine;
 using System;
+using System.Collections;
+using TMPro;
 
 namespace UnLogickFactory
 {
     public class CustomFbxExporter : MonoBehaviour
     {
+        public GameObject saveText;
         public bool enableExport = false;
         public GameObject objectToExport;
         public string customExportName = "CustomExportedModel";
+
         void Update()
         {
             if (enableExport && objectToExport != null)
             {
-                ExportFbx();
+                StartCoroutine(ExportFbx());
                 enableExport = false;
             }
         }
-        void ExportFbx()
+
+        IEnumerator ExportFbx()
         {
             GameObject copy = Instantiate(objectToExport);
 
@@ -24,9 +29,10 @@ namespace UnLogickFactory
             copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
             copy.transform.localScale = Vector3.one;
 
-            string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx";
+            string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
+        
 
-            Transform[] transforms = { copy.transform };
+         Transform[] transforms = { copy.transform };
 
             Debug.Log("Custom Fbx Exporter - Starting export");
 
@@ -46,6 +52,8 @@ namespace UnLogickFactory
                 settings.OnFbxMaterialCreated = OnFbxMaterialCallback;
                 settings.logLevel = 0;
 
+                // Perform export asynchronously if possible
+                yield return null; // This line simulates the asynchronous behavior
                 FbxExporter.Export(filename, settings, transforms);
 
 #if UNITY_EDITOR
@@ -53,6 +61,11 @@ namespace UnLogickFactory
                 UnityEditor.EditorGUIUtility.PingObject(UnityEditor.AssetDatabase.LoadMainAssetAtPath(filename));
 #endif
                 Debug.Log("Custom Fbx Exporter - Export Done");
+                saveText.SetActive(true);
+
+                // Wait for 5 seconds before hiding the saveText
+                yield return new WaitForSeconds(5);
+                saveText.SetActive(false);
             }
             else
             {
@@ -61,6 +74,7 @@ namespace UnLogickFactory
 
             Destroy(copy);
         }
+
         void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { }
         void OnFbxMeshCallback(Transform transform, IntPtr fbxNode, MeshRenderer meshRenderer, IntPtr fbxMesh) { }
         void OnFbxTerrainCallback(Transform transform, IntPtr fbxNode, Terrain terrain, IntPtr fbxMesh) { }

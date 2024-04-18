@@ -2,30 +2,45 @@
   <a href="https://github.com/lmxy0212/VRGaussianSplat.git">
     <img src="Younique.png" alt="Logo" width="80" height="80">
   </a>
-<h3 align="center">Younique</h3>
+<h3 align="center">Younique: The Immersive Ikebana Experience</h3>
 </div>
 
 
 
-
-
-
+<div align="center">
+  <img src="VR-IKEBANA.JPG" width="400" height="600">
+</div>
 
 ## About The Project
 
-We need a project intro hahaha
+We're currently developing our MVP, an immersive virtual experience centered around the art of ikebana. We believe that this XR project offers complex interactions that traditional media can't easily replicate. To bring this vision to life, we've digitized a physical space using 3D scanning technology, turning it into a virtual environment where users can interact with 3D scanned flowers. Participants use a VR headset to arrange these flowers, crafting their own ikebana creations. Afterwards, they can explore and interact with their floral designs in augmented reality, making the experience even more engaging.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTORS -->
+
+## Contributors 
+
+**Mackenzie Li**, XR Generalist, Harvard 25'
+
+**Grace Mai**, Technical Artist, Harvard 25'
+
+**Vera Wu**, UX Prototyper, Harvard 25'
 
 
 
 <!-- TABLE OF CONTENTS -->
-
-<details>
-  <summary>Table of Contents</summary>
+<p><details>
+  <summary><h3>Table of Contents</h3></summary>
   <ol>
     <li><a href="#build-with ">Build With</a></li>
-    <li><a href="#Contributors ">Contributors</a></li>
+    <li><a href="#Documentations ">Documentations</a>
+      <ul>
+        <li><a href="#folder-structure">Folder Structure</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+        <li><a href="#Scripts">Scripts</a></li>
+      </ul>
+    </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -37,15 +52,14 @@ We need a project intro hahaha
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
-
-
+</details></p>
+<br>
 
 ## Build with
 
 ### **Unity 2022.3.21f1** | **StandardRP** | **GraphicAPI-DX12**
 
-OpenXR + XR Interaction Toolkit
+OpenXR + XR Interaction Toolkit 3.0.1
 
 
 
@@ -63,9 +77,29 @@ Assets and external resources used in this projects:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Key Features
 
-Updated on Apr12/2024
+
+## Documentations
+
+Updated on Apr14/2024
+
+### Folder Structure
+
+* Current active Scene: Assets/Scenes/IkebanaWIP
+
+* All Scripts can be fond in Assets/Scripts
+
+* All prefabs in the scene are located in Assets/Flowers
+
+* Gaussian Splat assets can be created from Tools/Gaussian Splat/Create GaussianSplatAsset
+
+
+
+### Key Features
+
+**Gaussian Splat Assets:**
+
+* Convert Gaussian splat to the renderable assets -- using [GaussianSplattingVRViewerUnity](https://github.com/clarte53/GaussianSplattingVRViewerUnity) by CLARTE-LAB
 
 **Plates:**
 
@@ -87,21 +121,56 @@ Updated on Apr12/2024
 
 - Player can flip through the book in both directions, depending on which side is touched.
 
+**Menu:**
+
+* clickable hologram
+* Save the selected ikebana to FBX when camera button is clicked
+
+
+
+### **Scripts**
+
+**Snapping**: snap to pos, preserving the rotation and toggle physics when snap/unsnapped
+
+- AutoSnap.cs:  Attach to snap destination
+- SnapObj.cs: Attach to the snaped object
+
+**Hand Interactions**: interactions using hands (other than grab)
+
+- FlipBook.cs: Control flip book forward and backward animation 
+- HandMenuInteracter.cs: Control menu buttons
+- MenuController.cs: Control menu item transform
+
+**Object Manipulation:**
+
+- Cutcutcut.cs: Unparent the gameobject that is nearest to the cut point.
+
+**Tooltip**: 
+
+- StayVertical.cs: Make info panel stay vertical and facing the camera
+- TwoPoiintLine.cs: Render line between two point (run in editor)
+
+**Save FBX file:**
+
+* CustomFbxExporter.cs: Save the selected gameobject to FBX to the desired location (modified from Fbx Exporter for Unity)
+
+**Overwrite XRI**:
+
+* CheckOnGrab.cs: Enable tooltip on the first grab
+
+* CustomSocketInteractor.cs: Flag the gameobject being snapped by socket interaction
+* SetDynamicAttachPos.cs: Set dynamic attach pos when XRGrabIneractable is attached to the gameobject in runtime
+* XRInstantiateGrabbableObject.cs:  Instantiate XRGrabInteractable to gameobject
+
+**Audio**:
+
+- PlayAudio.cs: Play audio on collision
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTORS -->
-
-## Contributors 
-
-**Mackenzie Li**, XR Generalist
-
-**Grace Mai**, Technical Artist
-
-**Vera Wu**, UX Prototyper
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -127,20 +196,6 @@ Updated on Apr12/2024
 
 <!-- CONTRIBUTING -->
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated** **:)**
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
