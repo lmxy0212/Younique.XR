@@ -29,9 +29,10 @@ namespace UnLogickFactory
             copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
             copy.transform.localScale = Vector3.one;
 
-            string exportPath = $"D:\\Dropbox\\Dropbox\\Younique\\{customExportName}.fbx";
+            string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
+        
 
-            Transform[] transforms = { copy.transform };
+         Transform[] transforms = { copy.transform };
 
             Debug.Log("Custom Fbx Exporter - Starting export");
 
