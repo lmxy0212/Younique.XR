@@ -11,6 +11,7 @@ namespace UnLogickFactory
         public bool enableExport = false;
         public GameObject objectToExport;
         public GameObject tag;
+        public GameObject name_tag;
 
         public string customExportName = "CustomExportedModel";
         void Update()
@@ -25,6 +26,7 @@ namespace UnLogickFactory
         IEnumerator ExportFbx()
         {
             tag.transform.parent = objectToExport.transform;
+            name_tag.transform.parent = objectToExport.transform;
 
             GameObject copy = Instantiate(objectToExport);
 
@@ -36,6 +38,7 @@ namespace UnLogickFactory
             copy.GetComponent<SnappablePlate>().isSnaped = false;
 
             string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
+            // string exportPath = "/Users/manxueyingli/Dropbox/Younique";
         
 
          Transform[] transforms = { copy.transform };
