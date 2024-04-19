@@ -1,0 +1,88 @@
+fileFormatVersion: 2
+guid: 2ec5907160ce146439753620a98a2605
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'empty/flower/flower:000:'
+    second: {fileID: 2100000, guid: be4718595d52a4f778cdd0cf01263d8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'empty/planet/planet:000:'
+    second: {fileID: 2100000, guid: a5a726fb6c77e40e590859300d6ae90c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'empty/ring/ring:000:'
+    second: {fileID: 2100000, guid: be4718595d52a4f778cdd0cf01263d8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'empty/sphere/sphere:000:'
+    second: {fileID: 2100000, guid: 3c2c9f20b865643858f6408eb0e78567, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'empty/stem/stem:000:'
+    second: {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'projector-base/SM_Holo_Projector_M_Projector_Base_0:000:'
+    second: {fileID: 2100000, guid: 50c5e336e553744e4945b6ce1cc0f018, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'projector-base/projector-base:000:'
+    second: {fileID: 2100000, guid: 50c5e336e553744e4945b6ce1cc0f018, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'projector-light/SM_Holo_Projector_M_Projector_Emissive_0:000:'
+    second: {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'projector-light/projector-light:000:'
+    second: {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'title/title:000:'
+    second: {fileID: 2100000, guid: 605e2445a0fd04a748e9c735beebba16, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f53f5fc499d31e44b9deee84d28a9ee8, type: 3}
+  rootGameObjectId: 
+  rootGameObjectName: 
+  importerVersion: 1
+  streamSettings:
+    normals: 1
+    tangents: 1
+    cameraAspectRatio: 2
+    importVisibility: 1
+    scaleFactor: 0.01
+    swapHandedness: 1
+    flipFaces: 0
+    interpolateSamples: 1
+    importPointPolygon: 1
+    importLinePolygon: 1
+    importTrianglePolygon: 1
+    importXform: 1
+    importCameras: 1
+    importMeshes: 1
+    importPoints: 0
+    importCurves: 1
+    createCurveRenderers: 0
+  abcStartTime: 0
+  abcEndTime: 16.333333333333332
+  startTime: 0
+  endTime: 16.333330154418945
+  importWarning: 
+  firstImport: 0
+  isHDF5: 0
