@@ -5,7 +5,7 @@ using UnLogickFactory;
 
 public class HandMenuInteracter : MonoBehaviour
 {
-    public MenuController menuControllerScript;
+    public MenuControllerMotionGraph menuControllerScript;
     public CustomFbxExporter fbxExporter;
     void Start()
     {
