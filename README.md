@@ -193,8 +193,9 @@ Assets and external resources used in this projects:
 - Alembic
 - Fbx Exporter for Unity
 - Autodesk FBX SDK for Unity
-
-
+- [HologramShader](https://github.com/andydbc/HologramShader) by andydbc
+- [@ffish.asia / floraZia.com](https://sketchfab.com/ffishAsia-and-floraZia), [@Alexandre Tokovinine](https://sketchfab.com/tokovinin3d), [@Shedmon](https://sketchfab.com/shedmon) [@julesotway](https://sketchfab.com/julesotway) [@s0muchm0tta](https://sketchfab.com/s0muchm0tta) [@Virtual Museums of Małopolska
+](https://sketchfab.com/WirtualneMuzeaMalopolski) [@skdmuseum](https://sketchfab.com/skdmuseum) [@Florida Public Archaeology Network](https://sketchfab.com/fpan) [@Arkify 3D](https://sketchfab.com/arkify) from Sketchfab
 
 
 <!-- LICENSE -->
