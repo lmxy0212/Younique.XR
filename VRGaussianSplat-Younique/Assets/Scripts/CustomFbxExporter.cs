@@ -26,7 +26,7 @@ namespace UnLogickFactory
             GameObject copy = Instantiate(objectToExport);
 
             copy.transform.position = Vector3.zero;
-            copy.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            copy.transform.rotation = Quaternion.Euler(-90, 0, 180);
             copy.transform.localScale = Vector3.one;
 
             string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
