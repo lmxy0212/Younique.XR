@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnLogickFactory;
 
-public class CustomSocketInteractor : MonoBehaviour
+public class CustomSocketInteractorForDemo : MonoBehaviour
 {
     public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
 
@@ -19,22 +19,27 @@ public class CustomSocketInteractor : MonoBehaviour
         }
 
         socketInteractor.selectEntered.AddListener(OnSelectEntered);
-        socketInteractor.selectExited.AddListener(OnSelectExited);
+        //socketInteractor.selectExited.AddListener(OnSelectExited);
     }
 
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         currentSnappedObject = args.interactableObject.transform.gameObject;
+        currentSnappedObject.GetComponent<Rigidbody>().isKinematic = true;
+        currentSnappedObject.GetComponent <MeshCollider>().isTrigger = true;
+        //Destroy(currentSnappedObject.GetComponent<MeshCollider>());
+        //Destroy(currentSnappedObject.GetComponent<XRGrabInteractable>());
+        //Destroy(currentSnappedObject.GetComponent<Rigidbody>());
         saveController.objectToExport = currentSnappedObject;
         Debug.Log("GameObject Snapped: " + currentSnappedObject.name);
     }
 
-    private void OnSelectExited(SelectExitEventArgs args)
-    {
-        Debug.Log("GameObject Unsnapped: " + currentSnappedObject.name);
-        currentSnappedObject = null;
-        saveController.objectToExport = currentSnappedObject;
-    }
+    //private void OnSelectExited(SelectExitEventArgs args)
+    //{
+    //    Debug.Log("GameObject Unsnapped: " + currentSnappedObject.name);
+    //    currentSnappedObject = null;
+    //    saveController.objectToExport = null;
+    //}
 
     public GameObject GetCurrentSnappedObject()
     {
