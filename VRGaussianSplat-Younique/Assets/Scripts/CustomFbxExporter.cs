@@ -10,9 +10,9 @@ namespace UnLogickFactory
         public GameObject saveText;
         public bool enableExport = false;
         public GameObject objectToExport;
-        public string customExportName = "CustomExportedModel";
-        public NameTagController nameTagController;
+        public GameObject tag;
 
+        public string customExportName = "CustomExportedModel";
         void Update()
         {
             if (enableExport && objectToExport != null)
@@ -24,11 +24,11 @@ namespace UnLogickFactory
 
         IEnumerator ExportFbx()
         {
-            nameTagController = objectToExport.GetComponentInChildren<NameTagController>();
-            nameTagController.tagObj.SetActive(true);
-            nameTagController.Text.UpdateText(customExportName); 
+            tag.transform.parent = objectToExport.transform;
 
             GameObject copy = Instantiate(objectToExport);
+
+            //tag.transform.parent = copy.transform;
 
             copy.transform.position = Vector3.zero;
             copy.transform.rotation = Quaternion.Euler(-90, 0, 180);
