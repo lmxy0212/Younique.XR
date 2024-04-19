@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
-using TMPro;
+using TinyGiantStudio.Text;
 
 namespace UnLogickFactory
 {
@@ -11,6 +11,7 @@ namespace UnLogickFactory
         public bool enableExport = false;
         public GameObject objectToExport;
         public string customExportName = "CustomExportedModel";
+        public NameTagController nameTagController;
 
         void Update()
         {
@@ -23,6 +24,10 @@ namespace UnLogickFactory
 
         IEnumerator ExportFbx()
         {
+            nameTagController = objectToExport.GetComponentInChildren<NameTagController>();
+            nameTagController.tagObj.SetActive(true);
+            nameTagController.Text.UpdateText(customExportName); 
+
             GameObject copy = Instantiate(objectToExport);
 
             copy.transform.position = Vector3.zero;
