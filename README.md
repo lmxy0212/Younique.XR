@@ -21,15 +21,16 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 ## Contributors 
 
-**Mackenzie Li**, XR Generalist, Harvard 25'
+**Mackenzie Li**, XR Generalist, Harvard 25', manxueyingli@mde.harvard.edu
 
-**Grace Mai**, Technical Artist, Harvard 25'
+**Grace Mai**, Technical Artist, Harvard 25', gmai@mde.harvard.edu
 
-**Vera Wu**, UX Prototyper, Harvard 25'
+**Vera Wu**, UX Prototyper, Harvard 25', vwu@mde.harvard.edu
 
 
 
 <!-- TABLE OF CONTENTS -->
+
 <p><details>
   <summary><h3>Table of Contents</h3></summary>
   <ol>
@@ -49,11 +50,13 @@ We're currently developing our MVP, an immersive virtual experience centered aro
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#credits">Credits</a></li>
+    
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details></p>
-<br>
+
 
 ## Build with
 
@@ -61,19 +64,7 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 OpenXR + XR Interaction Toolkit 3.0.1
 
-
-
-Assets and external resources used in this projects:
-
-- [GaussianSplattingVRViewerUnity](https://github.com/clarte53/GaussianSplattingVRViewerUnity) by CLARTE-LAB
-
-- Alembic
-
-- Fbx Exporter for Unity
-
-- Autodesk FBX SDK for Unity
-
-- Tested on Quest2 and Quest Pro
+Tested on Quest2 and Quest Pro
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,7 +185,17 @@ Updated on Apr14/2024
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+## Credits
+
+Assets and external resources used in this projects:
+
+- [GaussianSplattingVRViewerUnity](https://github.com/clarte53/GaussianSplattingVRViewerUnity) by CLARTE-LAB
+- Alembic
+- Fbx Exporter for Unity
+- Autodesk FBX SDK for Unity
+- [HologramShader](https://github.com/andydbc/HologramShader) by andydbc
+- [@ffish.asia / floraZia.com](https://sketchfab.com/ffishAsia-and-floraZia), [@Alexandre Tokovinine](https://sketchfab.com/tokovinin3d), [@Shedmon](https://sketchfab.com/shedmon) [@julesotway](https://sketchfab.com/julesotway) [@s0muchm0tta](https://sketchfab.com/s0muchm0tta) [@Virtual Museums of Małopolska
+](https://sketchfab.com/WirtualneMuzeaMalopolski) [@skdmuseum](https://sketchfab.com/skdmuseum) [@Florida Public Archaeology Network](https://sketchfab.com/fpan) [@Arkify 3D](https://sketchfab.com/arkify) from Sketchfab
 
 
 <!-- LICENSE -->
