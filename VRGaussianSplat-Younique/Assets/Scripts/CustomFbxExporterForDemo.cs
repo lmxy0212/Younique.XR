@@ -34,7 +34,7 @@ namespace UnLogickFactory
 
             copy.transform.position = Vector3.zero;
             copy.transform.rotation = Quaternion.Euler(-90, 0, 180);
-            copy.transform.localScale = Vector3.one;
+            copy.transform.localScale = Vector3.one*100;
             copy.GetComponent<SnappablePlate>().isSnaped = false;
 
             string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
