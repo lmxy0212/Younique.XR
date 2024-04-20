@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3269421, g: 0.24930379, b: 0.25747323, a: 1}
+  m_IndirectSpecularColor: {r: 0.32665384, g: 0.24917492, b: 0.25742006, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2520,19 +2520,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.62
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.15
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.08
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.99691737
+      value: 0.87159914
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2540,11 +2540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.07845902
+      value: -0.4902193
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2552,7 +2552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -369
+      value: -58.71
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4838,7 +4838,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4859,7 +4859,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -4871,7 +4871,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572008508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -5125,7 +5125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572008508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec4a45f63359d53498b8203a56199d0d, type: 3}
   m_Name: 
@@ -8845,147 +8845,53 @@ MonoBehaviour:
   lines:
   - gameObjects: []
     meshLayouts:
-    - mesh: {fileID: -4347442238152841289, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.022171875, y: 0.01171875, z: 0}
+    - mesh: {fileID: 2155175397081705514, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.011009375, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
       zOffset: 0
-      width: 0.014062501
-      height: 0.015000001
+      width: 0.0040462497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 759781273959429091, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.0072231246, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0035262497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 6448227295016970652, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.000056874473, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.01080625
+      height: 0.012999999
       depth: 0
       lineBreak: 0
       space: 0
     - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.01070625, y: 0.01171875, z: 0}
+      position: {x: 0.009189376, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
       zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
+      width: 0.0076862494
+      height: 0.012999999
       depth: 0
       lineBreak: 0
       space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.0018374994, y: 0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.0070312507, y: 0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.0159, y: 0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.024768751, y: 0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    width: 0.058406252
+    width: 0.026065
     individualYSpace: 0
-    widthIfNextObjectWasHere: 0.058406252
-    editorNote: 
-  - gameObjects: []
-    meshLayouts:
-    - mesh: {fileID: -4347442238152841289, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.022171875, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.014062501
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.01070625, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.0018374994, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.0070312507, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.0159, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.024768751, y: -0.01171875, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      xOffset: 0
-      yOffset: 0
-      zOffset: 0
-      width: 0.00886875
-      height: 0.015000001
-      depth: 0
-      lineBreak: 0
-      space: 0
-    width: 0.058406252
-    individualYSpace: 0
-    widthIfNextObjectWasHere: 0.058406252
+    widthIfNextObjectWasHere: 0.026065
     editorNote: 
 --- !u!23 &1053172672
 MeshRenderer:
@@ -9049,25 +8955,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d100e06f4a0744c8728e86700b5472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: 'Aaaaaa
-
-    Aaaaaa'
-  oldText: 'Aaaaaa
-
-    Aaaaaa'
+  _text: tima
+  oldText: tima
   wordArray:
-  - Aaaaaa
-  - '
-
-'
-  - Aaaaaa
+  - tima
   characterObjectList: []
   _allCharacterObjectList: []
   generatedMeshes: []
   autoSaveMesh: 1
   _font: {fileID: 11400000, guid: 239572c06052c794fa06bf1c7e738c68, type: 2}
   _material: {fileID: 2100000, guid: 323309279f3626a4ba74c611555546c5, type: 2}
-  _fontSize: {x: 0.15, y: 0.15, z: 0.6}
+  _fontSize: {x: 0.13, y: 0.13, z: 0.6}
   _capitalize: 0
   _lowercase: 0
   _autoLetterSize: 0
@@ -9120,7 +9018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 160536
+  GUIID: 32164
 --- !u!1 &1057243968
 GameObject:
   m_ObjectHideFlags: 0
@@ -15112,7 +15010,7 @@ MonoBehaviour:
   objectToExport: {fileID: 1805984841}
   tag: {fileID: 1405672022144406710}
   name_tag: {fileID: 1053172669}
-  customExportName: verawu
+  customExportName: tima
 --- !u!1 &1737035296
 GameObject:
   m_ObjectHideFlags: 0
