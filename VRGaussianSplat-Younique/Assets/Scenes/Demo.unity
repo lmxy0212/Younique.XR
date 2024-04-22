@@ -8845,19 +8845,41 @@ MonoBehaviour:
   lines:
   - gameObjects: []
     meshLayouts:
-    - mesh: {fileID: 2155175397081705514, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.011009375, y: 0, z: 0}
+    - mesh: {fileID: 1700757616789551298, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.015673125, y: 0.01015625, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
       zOffset: 0
-      width: 0.0040462497
+      width: 0.0055087497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: -5234583588969065367, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.009270625, y: 0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0072962497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 4083499565569585972, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.0025512506, y: 0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0061425
       height: 0.012999999
       depth: 0
       lineBreak: 0
       space: 0
     - mesh: {fileID: 759781273959429091, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.0072231246, y: 0, z: 0}
+      position: {x: 0.0022831243, y: 0.01015625, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
@@ -8867,19 +8889,58 @@ MonoBehaviour:
       depth: 0
       lineBreak: 0
       space: 0
-    - mesh: {fileID: 6448227295016970652, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: -0.000056874473, y: 0, z: 0}
+    - mesh: {fileID: 7438892434107310685, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.007694374, y: 0.01015625, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
       zOffset: 0
-      width: 0.01080625
+      width: 0.0072962497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 6846261376921446757, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.014884998, y: 0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0070849997
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    width: 0.036855
+    individualYSpace: 0
+    widthIfNextObjectWasHere: 0.036855
+    editorNote: 
+  - gameObjects: []
+    meshLayouts:
+    - mesh: {fileID: -345657687540276611, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.01599, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0054599997
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 3293798771769648490, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: -0.01035125, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0058175
       height: 0.012999999
       depth: 0
       lineBreak: 0
       space: 0
     - mesh: {fileID: 1390680423132786733, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
-      position: {x: 0.009189376, y: 0, z: 0}
+      position: {x: -0.0035993753, y: -0.01015625, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       xOffset: 0
       yOffset: 0
@@ -8889,9 +8950,53 @@ MonoBehaviour:
       depth: 0
       lineBreak: 0
       space: 0
-    width: 0.026065
+    - mesh: {fileID: -6447171676023037043, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.0022424995, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0039975
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 759781273959429091, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.0060043745, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0035262497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 2155175397081705514, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.0097906245, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.0040462497
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    - mesh: {fileID: 2077864318195817034, guid: d13876a0e0ba3924e9b55f28fed30995, type: 3}
+      position: {x: 0.015266875, y: -0.01015625, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      xOffset: 0
+      yOffset: 0
+      zOffset: 0
+      width: 0.00690625
+      height: 0.012999999
+      depth: 0
+      lineBreak: 0
+      space: 0
+    width: 0.03744
     individualYSpace: 0
-    widthIfNextObjectWasHere: 0.026065
+    widthIfNextObjectWasHere: 0.03744
     editorNote: 
 --- !u!23 &1053172672
 MeshRenderer:
@@ -8955,10 +9060,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d100e06f4a0744c8728e86700b5472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: tima
-  oldText: tima
+  _text: 'fusion
+
+    reality'
+  oldText: 'fusion
+
+    reality'
   wordArray:
-  - tima
+  - fusion
+  - '
+
+'
+  - reality
   characterObjectList: []
   _allCharacterObjectList: []
   generatedMeshes: []
@@ -9018,7 +9131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 32164
+  GUIID: 40734
 --- !u!1 &1057243968
 GameObject:
   m_ObjectHideFlags: 0
@@ -15010,7 +15123,7 @@ MonoBehaviour:
   objectToExport: {fileID: 1805984841}
   tag: {fileID: 1405672022144406710}
   name_tag: {fileID: 1053172669}
-  customExportName: tima
+  customExportName: SeanLoiu
 --- !u!1 &1737035296
 GameObject:
   m_ObjectHideFlags: 0
