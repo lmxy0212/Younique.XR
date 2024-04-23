@@ -13,7 +13,7 @@ namespace UnLogickFactory
         public GameObject tag;
         public GameObject name_tag;
 
-        public string customExportName = "CustomExportedModel";
+        public string customExportName = "";
         void Update()
         {
             if (enableExport && objectToExport != null)
@@ -37,9 +37,9 @@ namespace UnLogickFactory
             copy.transform.localScale = Vector3.one*100;
             copy.GetComponent<SnappablePlate>().isSnaped = false;
 
-            string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";
-            // string exportPath = "/Users/manxueyingli/Dropbox/Younique";
-        
+            string timestamp = DateTime.Now.ToString("HH-mm-ss");
+            string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{timestamp}-Younique_{customExportName}.fbx";
+            //string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";        
 
          Transform[] transforms = { copy.transform };
 
