@@ -1,12 +1,11 @@
 <div align="center">
   <p>
   Have you ever dreamed of owning a life simulator? 
+
   
   What about having a Dokodemo Door? 
     
-  Try Younique – the narrative-focused 3D experience sharing 
-  
-  that transforms how we create, connect and share. </p>
+ </p>
 </div>
 
 <div align="center">
