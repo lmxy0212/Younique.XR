@@ -1,18 +1,26 @@
 <div align="center">
-  <a href="https://github.com/lmxy0212/VRGaussianSplat.git">
-    <img src="Younique.png" alt="Logo" width="80" height="80">
-  </a>
-<h3 align="center">Younique: The Immersive Ikebana Experience</h3>
+  <p>
+  Have you ever dreamed of owning a life simulator? 
+  
+  What about having a Dokodemo Door? 
+    
+  Try Younique – the narrative-focused 3D experience sharing 
+  
+  that transforms how we create, connect and share. </p>
 </div>
 
-
-
 <div align="center">
-  <img src="VR-IKEBANA.JPG" width="400" height="600">
+  <img src="Poster.JPG" width="400" height="600">
 </div>
 
 ## About The Project
+The year is 2040. 
 
+In a world overwhelmed by data, Younique suddenly came into view.
+
+Amidst this sea of endless possibilities and pervasive uncertainty, struggling Generation Alpha found Younique to be a beacon of clarity. It offers them a clear path through the information overload and serves as a guiding light, providing relief from their struggle to make informed life decisions.
+
+## Update
 We're currently developing our MVP, an immersive virtual experience centered around the art of ikebana. We believe that this XR project offers complex interactions that traditional media can't easily replicate. To bring this vision to life, we've digitized a physical space using 3D scanning technology, turning it into a virtual environment where users can interact with 3D scanned flowers. Participants use a VR headset to arrange these flowers, crafting their own ikebana creations. Afterwards, they can explore and interact with their floral designs in augmented reality, making the experience even more engaging.
 
 
