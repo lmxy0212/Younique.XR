@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-  <img src="Poster.JPG" width="400" height="600">
+  <img src="Poster.JPG" width="600" height="900">
 </div>
 
 ## About The Project
