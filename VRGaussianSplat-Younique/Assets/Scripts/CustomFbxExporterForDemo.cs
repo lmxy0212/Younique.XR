@@ -81,7 +81,7 @@ namespace UnLogickFactory
                 Debug.LogError("Custom Fbx Exporter - No filename specified");
             }
 
-            //Destroy(copy);
+            Destroy(copy);
         }
 
         void OnFbxNodeCallback(Transform transform, IntPtr fbxNode) { }
