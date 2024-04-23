@@ -203,6 +203,8 @@ Assets and external resources used in this projects:
 - [HologramShader](https://github.com/andydbc/HologramShader) by andydbc
 - [@ffish.asia / floraZia.com](https://sketchfab.com/ffishAsia-and-floraZia), [@Alexandre Tokovinine](https://sketchfab.com/tokovinin3d), [@Shedmon](https://sketchfab.com/shedmon) [@julesotway](https://sketchfab.com/julesotway) [@s0muchm0tta](https://sketchfab.com/s0muchm0tta) [@Virtual Museums of Małopolska
 ](https://sketchfab.com/WirtualneMuzeaMalopolski) [@skdmuseum](https://sketchfab.com/skdmuseum) [@Florida Public Archaeology Network](https://sketchfab.com/fpan) [@Arkify 3D](https://sketchfab.com/arkify) from Sketchfab
+- 小原流いけばなの基本 by 小原流研究院編
+- [@小原流厦门支部-花间清幽](http://xhslink.com/N449fH)
 
 
 <!-- LICENSE -->
