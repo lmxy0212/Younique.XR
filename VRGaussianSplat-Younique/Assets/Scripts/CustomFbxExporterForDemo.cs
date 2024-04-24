@@ -39,7 +39,6 @@ namespace UnLogickFactory
 
             string timestamp = DateTime.Now.ToString("HH-mm-ss");
             string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{timestamp}-Younique_{customExportName}.fbx";
-            //string exportPath = $"C: \\Users\\lmxyi\\Dropbox\\Younique\\{customExportName}.fbx";        
 
          Transform[] transforms = { copy.transform };
 
