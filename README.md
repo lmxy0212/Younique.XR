@@ -6,11 +6,19 @@
   What about having a Dokodemo Door? 
     
  </p>
+ 
 </div>
+
 
 <div align="center">
   <img src="Poster.JPG" width="600" height="900">
 </div>
+
+
+## Some cool videos you should watch
+- [**Interactive 360° Demo Video**](https://youtu.be/L8BfW5rFEus) Remember to scroll with mouse!!
+
+
 
 ## About The Project
 The year is 2040. 
@@ -18,6 +26,7 @@ The year is 2040.
 In a world overwhelmed by data, Younique suddenly came into view.
 
 Amidst this sea of endless possibilities and pervasive uncertainty, struggling Generation Alpha found Younique to be a beacon of clarity. It offers them a clear path through the information overload and serves as a guiding light, providing relief from their struggle to make informed life decisions.
+
 
 ## Update
 We're currently developing our MVP, an immersive virtual experience centered around the art of ikebana. We believe that this XR project offers complex interactions that traditional media can't easily replicate. To bring this vision to life, we've digitized a physical space using 3D scanning technology, turning it into a virtual environment where users can interact with 3D scanned flowers. Participants use a VR headset to arrange these flowers, crafting their own ikebana creations. Afterwards, they can explore and interact with their floral designs in augmented reality, making the experience even more engaging.
