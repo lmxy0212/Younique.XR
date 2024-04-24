@@ -13,6 +13,7 @@ TagManager:
   - Plate
   - Menu
   - Camera-Btn
+  - recordingCamera
   layers:
   - Default
   - TransparentFX
