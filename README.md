@@ -41,7 +41,7 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 **Grace Mai**, Technical Artist, Harvard 25', gmai@mde.harvard.edu
 
-**Vera Wu**, UX Prototyper, Harvard 25', vwu@mde.harvard.edu
+**Vera Wu**, Creative Prototyper, Harvard 25', vwu@mde.harvard.edu
 
 
 
