@@ -12,6 +12,8 @@ namespace UnLogickFactory
         public GameObject objectToExport;
         public GameObject tag;
         public GameObject name_tag;
+        public GameObject date;
+        public Vector3 rotation;
 
         public string customExportName = "";
         void Update()
@@ -27,13 +29,14 @@ namespace UnLogickFactory
         {
             tag.transform.parent = objectToExport.transform;
             name_tag.transform.parent = objectToExport.transform;
+            date.transform.parent = objectToExport.transform;
 
             GameObject copy = Instantiate(objectToExport);
 
             //tag.transform.parent = copy.transform;
 
             copy.transform.position = Vector3.zero;
-            copy.transform.rotation = Quaternion.Euler(-90, 0, 180);
+            copy.transform.rotation = Quaternion.Euler(rotation);
             copy.transform.localScale = Vector3.one*100;
             copy.GetComponent<SnappablePlate>().isSnaped = false;
 

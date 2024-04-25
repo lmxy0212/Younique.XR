@@ -7,6 +7,7 @@ using UnLogickFactory;
 public class AutoSnapForDemo : MonoBehaviour
 {
     public CustomFbxExporterForDemo saveController;
+    private bool snapped;
 
     void Start()
     {
@@ -19,8 +20,9 @@ public class AutoSnapForDemo : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject parentObj = other.gameObject;
-        if (other.gameObject.tag == "Plate" && !parentObj.GetComponent<SnappablePlate>().isSnaped)
+        if (other.gameObject.tag == "Plate" && !parentObj.GetComponent<SnappablePlate>().isSnaped && !snapped)
         {
+            snapped = true;
             parentObj.transform.position = this.transform.position;
             Debug.Log(this.name + ": Enter" + other.gameObject.name);
             parentObj.GetComponent<Rigidbody>().isKinematic = true;
