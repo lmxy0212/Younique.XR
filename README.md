@@ -17,8 +17,12 @@
 
 ## Some cool videos you should watch
 - [**Interactive 360° Demo Video**](https://youtu.be/L8BfW5rFEus) Remember to scroll with mouse!!
+- [**Complete User Journey**](https://youtu.be/qeS3Ta6gn8Y?feature=shared)
+- [**Tech for the creator**](https://youtu.be/URJMFD1WJQE?feature=shared)
 
-
+<div align="center">
+  <img src="Poster.JPG" width="600" height="900">
+</div>
 
 ## About The Project
 The year is 2040. 
