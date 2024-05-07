@@ -9,7 +9,6 @@
  
 </div>
 
-
 <div align="center">
   <img src="Poster.JPG" width="600" height="900">
 </div>
@@ -20,9 +19,11 @@
 - [**Complete User Journey**](https://youtu.be/qeS3Ta6gn8Y?feature=shared)
 - [**Tech for the creator**](https://youtu.be/URJMFD1WJQE?feature=shared)
 
+**And follow us on instagram to learn more about ur Younique Journey:**
 <div align="center">
-  <img src="Poster.JPG" width="600" height="900">
+  <img src="insta.JPG" width="400" height="400">
 </div>
+
 
 ## About The Project
 The year is 2040. 
