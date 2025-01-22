@@ -228,11 +228,3 @@ Assets and external resources used in this projects:
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-This project is developed in Harvard MDE Studio II in Spring 2024, adviced by Jonathan Grinham, Karen Reuther, Kipp Bradford, Mark Coughlin.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
