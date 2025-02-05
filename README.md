@@ -1,14 +1,15 @@
 <div align="center">
-  <p>
-  Have you ever culture sharing through XR? 
+  <h3>
+  Younique: An Extended Reality System for Immersive Cultural Art
+Exploration
     
- </p>
+ </h3>
  
 </div>
 Cultural art practices often face barriers to engagement due to geographical, financial, and educational constraints. Younique, an Extended Reality (XR) system designed to offer an immersive experience for exploring Ikebana, the traditional Japanese art of flower arrangement. The system prioritizes user experience by offering an intuitive, self-guided, and seamlesscultural exploration journey.
 
 <div align="center">
-  <img src="FLowChart.JPG" width="600" height="900">
+  <img src="FLowChart.jpg">
 </div>
 
 
