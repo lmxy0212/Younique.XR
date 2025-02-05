@@ -1,16 +1,14 @@
 <div align="center">
   <p>
-  Have you ever dreamed of owning a life simulator? 
-
-  
-  What about having a Dokodemo Door? 
+  Have you ever culture sharing through XR? 
     
  </p>
  
 </div>
+Cultural art practices often face barriers to engagement due to geographical, financial, and educational constraints. Younique, an Extended Reality (XR) system designed to offer an immersive experience for exploring Ikebana, the traditional Japanese art of flower arrangement. The system prioritizes user experience by offering an intuitive, self-guided, and seamlesscultural exploration journey.
 
 <div align="center">
-  <img src="Poster.JPG" width="600" height="900">
+  <img src="FLowChart.JPG" width="600" height="900">
 </div>
 
 
@@ -26,11 +24,22 @@
 
 
 ## About The Project
-The year is 2040. 
+Cultural art practices offer opportunities for enrichment, creativity, and preservation but often face accessibility barriers due to geography, cost, and resource limitations [3]. Traditional learning media, such as books and videos, struggle to convey the nuances of hands-on practices, leading to limited engagement. Innovative approaches are needed to democratize access while preserving authenticity and depth.
 
-In a world overwhelmed by data, Younique suddenly came into view.
+XR (Extended Reality)—encompassing Virtual, Augmented, and Mixed Reality—offers a promising avenue for enhancing cultural learning through hands-on, immersive experiences. However, XR systems face several challenges. Users often find virtual environments disconnected from their everyday lives, hindering initial engagement. Additionally, digital UI elements or controller-based interactions can disrupt immersion, while the lack of revisitation mechanisms reduces long-term impact and cultural reach.
 
-Amidst this sea of endless possibilities and pervasive uncertainty, struggling Generation Alpha found Younique to be a beacon of clarity. It offers them a clear path through the information overload and serves as a guiding light, providing relief from their struggle to make informed life decisions.
+This study examines how XR systems can enhance cultural engagement through the art of Ikebana. With its Zen-inspired philosophy, intricate gestures, and emphasis on 3D spatial composition, Ikebana serves as an ideal testbed to showcase XR’s potential for intuitive, immersive interactions that deepen cultural understanding.
+
+We present Younique, a hyper-realistic XR system designed to deliver an immersive Ikebana creation experience, contributing to Human-Computer Interaction (HCI) and cultural engagement in the following ways:
+
+**Streamlined Environment Reconstruction Workflow**: We present a hybrid GS-to-VR pipeline that creates ultra-detailed, interactive home workshop settings, grounding virtual experiences in reality to make cultural art practices more relatable and immersive.
+
+**Guided Flow Through Intuitive Interactions**: We developed intuitive, controller-free interactions that closely mimic real-world Ikebana techniques. These interactions are complemented by environment-integrated interfaces designed to minimize distractions while providing sufficient guidance for users to confidently engage in the creative process.
+
+**AR Integration for Revisiting**: We introduce an innovative AR Quick View feature that allows users to save and revisit digital creations, bridging XR experiences with everyday devices and enabling users to share their work widely.
+
+Younique highlights a versatile pipeline for XR applications, combining environment reconstruction, intuitive interactions, and AR revisitation. While focused on Ikebana, the system’s approach has broad potential for cultural art practices, skill-based learning, and immersive education, paving the way for engaging XR experiences across diverse domains.
+
 
 
 ## Update
@@ -42,7 +51,7 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 ## Contributors 
 
-**Mackenzie Li**, XR Generalist, Harvard 25', manxueyingli@mde.harvard.edu
+**Mackenzie Li**, XR Developer, Harvard 25', manxueyingli@mde.harvard.edu
 
 **Grace Mai**, Technical Artist, Harvard 25', gmai@mde.harvard.edu
 
