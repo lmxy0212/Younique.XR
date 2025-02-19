@@ -52,11 +52,11 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 ## Contributors 
 
-**Mackenzie Li**, XR Developer, Harvard 25', manxueyingli@mde.harvard.edu
+**Mackenzie Li**, XR Developer, Harvard 25'
 
-**Grace Mai**, Technical Artist, Harvard 25', gmai@mde.harvard.edu
+**Grace Mai**, Technical Artist, Harvard 25'
 
-**Vera Wu**, Creative Prototyper, Harvard 25', vwu@mde.harvard.edu
+**Vera Wu**, Creative Prototyper, Harvard 25'
 
 
 
