@@ -4,23 +4,38 @@
 Exploration
     
  </h3>
- 
 </div>
-Cultural art practices often face barriers to engagement due to geographical, financial, and educational constraints. Younique, an Extended Reality (XR) system designed to offer an immersive experience for exploring Ikebana, the traditional Japanese art of flower arrangement. The system prioritizes user experience by offering an intuitive, self-guided, and seamlesscultural exploration journey.
+
+
+### Project Videos
+- [**Interactive 360° Demo Video**](https://youtu.be/L8BfW5rFEus) Remember to scroll with mouse!!
+- [**Complete User Journey**](https://youtu.be/qeS3Ta6gn8Y?feature=shared)
+- [**Tech for the creator**](https://youtu.be/URJMFD1WJQE?feature=shared)
+
+  
+### Project Summary 
+Younique is a 3D experience-sharing hub that reimagines how we record, share, and revisit experiences. Just as written stories, photographs, and short videos have shaped past generations of sharing, we believe the next evolution lies in spatial, immersive formats. Younique explores how XR technologies can transform passive viewers into active participants.
+Our pilot module centers on Ikebana, the traditional Japanese art of flower arrangement. Using a custom pipeline that combines 3D Gaussian Splatting for environment reconstruction, Unity for interaction design, and OpenXR hand-tracking, we create a hyper-realistic, controller-free VR experience. Users can intuitively compose their own floral arrangements and save them as shareable AR assets—portable, embeddable, and revisitable on any compatible mobile device.
+Younique is both a design exploration and a technical prototype. It asks: What does it mean to “share an experience” in 3D? How do we preserve the texture of human interaction through spatial interfaces? And how can immersive media help us engage with unfamiliar experiences more personally?
+By making embodied, sensory experiences accessible and interactive, Younique opens up new directions in cultural learning, storytelling, and digital memory-making.
+
 
 <div align="center">
   <img src="FLowChart.jpg">
 </div>
 
+### Contributors 
 
-## Some cool videos you should watch
-- [**Interactive 360° Demo Video**](https://youtu.be/L8BfW5rFEus) Remember to scroll with mouse!!
-- [**Complete User Journey**](https://youtu.be/qeS3Ta6gn8Y?feature=shared)
-- [**Tech for the creator**](https://youtu.be/URJMFD1WJQE?feature=shared)
+**Mackenzie Li**, XR Developer, Harvard 25'
 
-**And follow us on instagram to learn more about ur Younique Journey:**
+**Grace Mai**, Technical Artist, Harvard 25'
+
+**Vera Wu**, Creative Prototyper, Harvard 25'
+
+
+### And follow us on instagram to learn more about ur Younique Journey:
 <div align="center">
-  <img src="insta.JPG" width="400" height="400">
+  <img src="insta.JPG" width="300" height="300">
 </div>
 
 
@@ -48,46 +63,6 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 
 
 
-<!-- CONTRIBUTORS -->
-
-## Contributors 
-
-**Mackenzie Li**, XR Developer, Harvard 25'
-
-**Grace Mai**, Technical Artist, Harvard 25'
-
-**Vera Wu**, Creative Prototyper, Harvard 25'
-
-
-
-<!-- TABLE OF CONTENTS -->
-
-<p><details>
-  <summary><h3>Table of Contents</h3></summary>
-  <ol>
-    <li><a href="#build-with ">Build With</a></li>
-    <li><a href="#Documentations ">Documentations</a>
-      <ul>
-        <li><a href="#folder-structure">Folder Structure</a></li>
-        <li><a href="#key-features">Key Features</a></li>
-        <li><a href="#Scripts">Scripts</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#credits">Credits</a></li>
-    
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details></p>
-
 
 ## Build with
 
@@ -99,122 +74,6 @@ Tested on Quest2 and Quest Pro
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## Documentations
-
-Updated on Apr14/2024
-
-### Folder Structure
-
-* Current active Scene: Assets/Scenes/IkebanaWIP
-
-* All Scripts can be fond in Assets/Scripts
-
-* All prefabs in the scene are located in Assets/Flowers
-
-* Gaussian Splat assets can be created from Tools/Gaussian Splat/Create GaussianSplatAsset
-
-
-
-### Key Features
-
-**Gaussian Splat Assets:**
-
-* Convert Gaussian splat to the renderable assets -- using [GaussianSplattingVRViewerUnity](https://github.com/clarte53/GaussianSplattingVRViewerUnity) by CLARTE-LAB
-
-**Plates:**
-
-- Plates featuring kanzan can be picked up.
-- Once pick up a plate for the first time, player will see a description of kanzan.
-
-**Knife:**
-
-- Player can pick up the knife.
-- Use the knife to trim the branches and leaves of flowers.
-
-**Flowers and Leaves:**
-
-- These can also be picked up.
-- Player can use the knife to cut them.
-- The main branch can be snapped to the kanzan.
-
-**Book/Manual:**
-
-- Player can flip through the book in both directions, depending on which side is touched.
-
-**Menu:**
-
-* clickable hologram
-* Save the selected ikebana to FBX when camera button is clicked
-
-
-
-### **Scripts**
-
-**Snapping**: snap to pos, preserving the rotation and toggle physics when snap/unsnapped
-
-- AutoSnap.cs:  Attach to snap destination
-- SnapObj.cs: Attach to the snaped object
-
-**Hand Interactions**: interactions using hands (other than grab)
-
-- FlipBook.cs: Control flip book forward and backward animation 
-- HandMenuInteracter.cs: Control menu buttons
-- MenuController.cs: Control menu item transform
-
-**Object Manipulation:**
-
-- Cutcutcut.cs: Unparent the gameobject that is nearest to the cut point.
-
-**Tooltip**: 
-
-- StayVertical.cs: Make info panel stay vertical and facing the camera
-- TwoPoiintLine.cs: Render line between two point (run in editor)
-
-**Save FBX file:**
-
-* CustomFbxExporter.cs: Save the selected gameobject to FBX to the desired location (modified from Fbx Exporter for Unity)
-
-**Overwrite XRI**:
-
-* CheckOnGrab.cs: Enable tooltip on the first grab
-
-* CustomSocketInteractor.cs: Flag the gameobject being snapped by socket interaction
-* SetDynamicAttachPos.cs: Set dynamic attach pos when XRGrabIneractable is attached to the gameobject in runtime
-* XRInstantiateGrabbableObject.cs:  Instantiate XRGrabInteractable to gameobject
-
-**Audio**:
-
-- PlayAudio.cs: Play audio on collision
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-### Prerequisites
-
-* Unity 2022.3.21f1
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/lmxy0212/VRGaussianSplat.git
-   ```
-
-2. Open with Unity Hub
-   ```sh
-   project path: /VRGaussianSplat/VRGaussianSplat-Younique
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Credits
 
@@ -230,8 +89,6 @@ Assets and external resources used in this projects:
 - 小原流いけばなの基本 by 小原流研究院編
 - [@小原流厦门支部-花间清幽](http://xhslink.com/N449fH)
 
-
-<!-- LICENSE -->
 
 ## License
 
