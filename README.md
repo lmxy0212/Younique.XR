@@ -1,14 +1,16 @@
 <div align="center">
-  <h3>
-  Younique: An Extended Reality System for Immersive Cultural Art
-Exploration
-    
- </h3>
+  <h1>
+  Younique: A 3D experience-sharing hub
+ </h1>
 </div>
   
 ### Project Summary 
 Younique is a 3D experience-sharing hub that reimagines how we record, share, and revisit experiences. Just as written stories, photographs, and short videos have shaped past generations of sharing, we believe the next evolution lies in spatial, immersive formats. Younique explores how XR technologies can transform passive viewers into active participants.
+
+
 Our pilot module centers on Ikebana, the traditional Japanese art of flower arrangement. Using a custom pipeline that combines 3D Gaussian Splatting for environment reconstruction, Unity for interaction design, and OpenXR hand-tracking, we create a hyper-realistic, controller-free VR experience. Users can intuitively compose their own floral arrangements and save them as shareable AR assets—portable, embeddable, and revisitable on any compatible mobile device.
+
+
 Younique is both a design exploration and a technical prototype. It asks: What does it mean to “share an experience” in 3D? How do we preserve the texture of human interaction through spatial interfaces? And how can immersive media help us engage with unfamiliar experiences more personally?
 By making embodied, sensory experiences accessible and interactive, Younique opens up new directions in cultural learning, storytelling, and digital memory-making.
 
