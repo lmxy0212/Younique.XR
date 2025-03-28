@@ -1,16 +1,14 @@
 <div align="center">
-  <h1>
-  Younique: A 3D experience-sharing hub
- </h1>
+  <h3>
+  Younique: An Extended Reality System for Immersive Cultural Art
+Exploration
+    
+ </h3>
 </div>
   
 ### Project Summary 
 Younique is a 3D experience-sharing hub that reimagines how we record, share, and revisit experiences. Just as written stories, photographs, and short videos have shaped past generations of sharing, we believe the next evolution lies in spatial, immersive formats. Younique explores how XR technologies can transform passive viewers into active participants.
-
-
 Our pilot module centers on Ikebana, the traditional Japanese art of flower arrangement. Using a custom pipeline that combines 3D Gaussian Splatting for environment reconstruction, Unity for interaction design, and OpenXR hand-tracking, we create a hyper-realistic, controller-free VR experience. Users can intuitively compose their own floral arrangements and save them as shareable AR assets—portable, embeddable, and revisitable on any compatible mobile device.
-
-
 Younique is both a design exploration and a technical prototype. It asks: What does it mean to “share an experience” in 3D? How do we preserve the texture of human interaction through spatial interfaces? And how can immersive media help us engage with unfamiliar experiences more personally?
 By making embodied, sensory experiences accessible and interactive, Younique opens up new directions in cultural learning, storytelling, and digital memory-making.
 
@@ -38,7 +36,6 @@ By making embodied, sensory experiences accessible and interactive, Younique ope
   <img src="insta.JPG" width="300" height="300">
 </div>
 
-
 ## About The Project
 Cultural art practices offer opportunities for enrichment, creativity, and preservation but often face accessibility barriers due to geography, cost, and resource limitations [3]. Traditional learning media, such as books and videos, struggle to convey the nuances of hands-on practices, leading to limited engagement. Innovative approaches are needed to democratize access while preserving authenticity and depth.
 
@@ -56,14 +53,6 @@ We present Younique, a hyper-realistic XR system designed to deliver an immersiv
 
 Younique highlights a versatile pipeline for XR applications, combining environment reconstruction, intuitive interactions, and AR revisitation. While focused on Ikebana, the system’s approach has broad potential for cultural art practices, skill-based learning, and immersive education, paving the way for engaging XR experiences across diverse domains.
 
-
-
-## Update
-We're currently developing our MVP, an immersive virtual experience centered around the art of ikebana. We believe that this XR project offers complex interactions that traditional media can't easily replicate. To bring this vision to life, we've digitized a physical space using 3D scanning technology, turning it into a virtual environment where users can interact with 3D scanned flowers. Participants use a VR headset to arrange these flowers, crafting their own ikebana creations. Afterwards, they can explore and interact with their floral designs in augmented reality, making the experience even more engaging.
-
-
-
-
 ## Build with
 
 ### **Unity 2022.3.21f1** | **StandardRP** | **GraphicAPI-DX12**
@@ -71,8 +60,6 @@ We're currently developing our MVP, an immersive virtual experience centered aro
 OpenXR + XR Interaction Toolkit 3.0.1
 
 Tested on Quest2 and Quest Pro
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Credits
@@ -93,5 +80,3 @@ Assets and external resources used in this projects:
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
